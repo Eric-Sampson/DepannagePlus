@@ -77,3 +77,30 @@ select {
     border-color: white;
     min-width: 300px;
   }
+
+  @media (min-width:480px) and (max-width:810px) {
+
+    section {
+      width:100vw;
+      margin:0 auto;
+      background-color: #1b1b32;
+      color: #f5f6f7;
+      font-family: Tahoma;
+      font-size: 16px;
+    }
+  }
+
+
+  @media all and (max-width:480px) {
+
+    section {
+      width:85vw;
+      margin:0 auto;
+      background-color: #1b1b32;
+      color: #f5f6f7;
+      font-family: Tahoma;
+      font-size: 16px;
+  
+  }
+
+  }
