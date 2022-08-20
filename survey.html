@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./survey.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <h1 id="title">DepannagePlus Survey Form</h1>
+    <p id="description">Thank you for helping us understand how we can better serve your maintenance needs</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <h2>Personal Info</h2>
+            <label for="name" id="name" >Name: <input type="text" id="name" required></label>
+            <label for="email" id="email" >Email: <input type="email" id="email" pattern="@email.com"></label>
+            <label for="age" id="age" >Age: <input type="number" id="age" min="12" max="120"></label>
+            <label for="profession" id="profession" >Profession<input type="text" id="profession"></label>
+            <label for="tel" id="tel" >Telephone: <input type="number" id="tel"></label>
+        </fieldset>
+        <fieldset>
+            <h2>Questionnaire</h2>
+            <p>1. On a scale of 1 to 5, how often do you require repairs in your house or office?</p>
+            <select name="often" id="often">
+                <option value="" selected disabled hidden>select one</option>
+                <option value="">1(Seldom)</option>
+                <option value="">2(Once in a while)</option>
+                <option value="">3(Average)</option>
+                <option value="">4(Often)</option>
+                <option value="">5(Very often)</option>
+            </select>
+
+            <p>2. Which service(s) do you most often require? (You can choose more than one)</p>
+            <label for="electrician"><input type="checkbox" value="electrician" class="inline"> Electrician</label>
+            <label for="pressing"><input type="checkbox" value="pressing" class="inline"> Pressing</label>
+            <label for="plumbing"><input type="checkbox" value="plumbing" class="inline"> Plumbing</label>
+            <label for="AC"><input type="checkbox" value="AC" class="inline"> Air Conditioning</label>
+            <label for="carpentry"><input type="checkbox" value="carpentry" class="inline"> Carpentry</label>
+            <label for="cleaning"><input type="checkbox" value="cleaning" class="inline"> House/Office cleaning</label>
+            <label for="civil-works"><input type="checkbox" value="civil-works" class="inline"> Civil Works</label>
+            <label for="painting"><input type="checkbox" value="painting" class="inline"> Painting</label>
+            <label for="fittings"><input type="checkbox" value="fittings" class="inline"> Fittings/Installations</label>
+            <label for="errands"><input type="checkbox" value="errands" class="inline"> Errands(Delivery, pick up etc)</label>
+
+            <p>3. When last did you call anyone to perform such a service for you?</p>
+            <select name="last-time" id="last-time">
+                <option value="" selected hidden disabled>select one</option>
+                <option value="">Less than a week ago</option>
+                <option value="">Less than 2 weeks ago</option>
+                <option value="">Less than a month ago</option>
+                <option value="">Between 1 to 6 months ago</option>
+                <option value="">More than a year ago</option>
+                <option value="">I don't remember</option>
+            </select>
+
+            <p>4. In what way have you ever been disappointed by a technician? (You can tick more than one)</p>
+
+            <label for="technician1"><input type="checkbox" value="technician1" class="inline"> The technician did not show up</label>
+            <label for="technician2"><input type="checkbox" value="technician2" class="inline"> The technician a bad job</label>
+            <label for="technician3"><input type="checkbox" value="technician3" class="inline"> The technician was dishonest with the price of items to be used</label>
+            <label for="technician4"><input type="checkbox" value="technician4" class="inline"> The technician came late</label>
+            <label for="technician5"><input type="checkbox" value="technician5" class="inline"> Other</label>
+            <label for="technician6"><input type="checkbox" value="technician6" class="inline"> I have never been disappointed by a technician</label>
+
+            <p>5. What's the average fee you have ever paid for repairs to be done in your office or home?</p>
+
+            <select name="fee" id="fee">
+                <option value="" selected hidden disabled>Select one</option>
+                <option value="fee1">Less than 5000frs</option>
+                <option value="fee2">5000 to 10,000frs</option>
+                <option value="fee3">20,000 to 30,000frs</option>
+                <option value="fee4">30,000 to 50,000frs</option>
+                <option value="fee5">50,000frs and above</option>
+            </select>
+
+            <p>6. What is your age range?</p>
+            <select name="age-range" id="age-range">
+                <option value="" selected hidden disabled>Select one</option>
+                <option value="">18 or younger</option>
+                <option value="">19 to 24</option>
+                <option value="">25 to 34</option>
+                <option value="">35 to 64</option>
+                <option value="">65 and older</option>
+            </select>
+
+            <p>7. Would you like DepannagePlus to take charge of your maintenance issues?</p>
+
+            <label for="yes"><input type="radio" value="yes" class="inline"> Absolutely</label>
+            <label for="maybe"><input type="radio" value="maybe" class="inline"> Maybe</label>
+            <label for="no"><input type="radio" value="no" class="inline"> Never</label>
+
+            <p>8. What are your priorities in finding a technician for your maintenance issues? (You can choose more than one)</p>
+
+            <label for="cost"><input type="checkbox" value="cost" class="inline"> Cost</label>
+            <label for="acquaintance"><input type="checkbox" value="acquaintance" class="inline"> Acquaintance</label>
+            <label for="skill"><input type="checkbox" value="skill" class="inline"> Skill</label>
+            <label for="speed"><input type="checkbox" value="speed" class="inline"> Speed</label>
+            <label for="other"><input type="checkbox" value="other" class="inline"> Other</label>
+
+            <p>9. What innovation(s) would you like to see in DeppanagePlus to improve your maintenance needs?</p>
+
+            <label for="suggestion">Suggestion Box: <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="I will love DepannagePlus technicians to..."></textarea></label>
+
+            <p>Thank you for sparing a few minutes of your time to go through this form. We hope the information helps us to better serve your maintenance needs. You may now submit</p>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</section>    
+</body>
+</html>
