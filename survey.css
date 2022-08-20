@@ -53,6 +53,11 @@ h1,h2  {
     margin: 0.5rem 0;
   }
 
+  .required::before {
+    content: "*";
+    color: red;
+  }
+
   input,
 textarea,
 select {
